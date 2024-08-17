@@ -21,7 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsApp2", "WinFormsApp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UygulamaCalismalari_5", "UygulamaCalismalari_5\UygulamaCalismalari_5.csproj", "{8392ED46-B591-448E-BB24-54ED0102F572}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UygulamaCalismalari_6", "UygulamaCalismalari_6\UygulamaCalismalari_6.csproj", "{84B0C481-9AF1-496F-BB9A-4BB2FCE35605}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UygulamaCalismalari_6", "UygulamaCalismalari_6\UygulamaCalismalari_6.csproj", "{84B0C481-9AF1-496F-BB9A-4BB2FCE35605}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odev12", "Odev12\Odev12.csproj", "{651B271E-DD3C-4083-964C-880632114067}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odev12_1", "Odev12_1\Odev12_1.csproj", "{FEDD940B-382D-4CB6-B5FC-80EC1E5C1832}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +73,14 @@ Global
 		{84B0C481-9AF1-496F-BB9A-4BB2FCE35605}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84B0C481-9AF1-496F-BB9A-4BB2FCE35605}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84B0C481-9AF1-496F-BB9A-4BB2FCE35605}.Release|Any CPU.Build.0 = Release|Any CPU
+		{651B271E-DD3C-4083-964C-880632114067}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{651B271E-DD3C-4083-964C-880632114067}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{651B271E-DD3C-4083-964C-880632114067}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{651B271E-DD3C-4083-964C-880632114067}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEDD940B-382D-4CB6-B5FC-80EC1E5C1832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEDD940B-382D-4CB6-B5FC-80EC1E5C1832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEDD940B-382D-4CB6-B5FC-80EC1E5C1832}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEDD940B-382D-4CB6-B5FC-80EC1E5C1832}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
