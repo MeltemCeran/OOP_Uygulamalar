@@ -5,9 +5,12 @@ namespace Odev12
 {
     internal class Program
     {
+        
         static void Main(string[] args)
         {
+
             List<Ipiece> list = new List<Ipiece>();
+             
 
             Dictionary<int, Ipiece> randomTaslar = new Dictionary<int, Ipiece>
         {
@@ -42,7 +45,7 @@ namespace Odev12
 
                 int tasRengi = rndRenk.Next(1, 3);
 
-                secilenClass.Color = (tasRengi == 1) ? PieceColor.White : PieceColor.Black;
+                secilenClass.Color = (tasRengi == 1) ? PieceColor.Black : PieceColor.White; //sanırım burda bir classın rengini atıyorum ve newlemem gerekiyor bir sonrakinde renk ataması için.
 
                 switch (secilenTas)
                 {
@@ -90,46 +93,28 @@ namespace Odev12
                 Console.WriteLine(new string('-',20));
             }
 
-            //SortedDictionary<string,int> tekrarEdenTas = new SortedDictionary<string, int>();
+            SortedDictionary<string, int> tekrarEdenTas = new SortedDictionary<string, int>();
 
-            //tekrarEdenTas.Add("At", knightSayac);
-            //tekrarEdenTas.Add("Piyon", pawnSayac);
-            //tekrarEdenTas.Add("Fil", bishopSayac);
-            //tekrarEdenTas.Add("Kale", rookSayac);
-            //tekrarEdenTas.Add("Vezir", queenSayac);
-            //tekrarEdenTas.Add("Şah", kingSayac);
+            tekrarEdenTas.Add("At", knightSayac);
+            tekrarEdenTas.Add("Piyon", pawnSayac);
+            tekrarEdenTas.Add("Fil", bishopSayac);
+            tekrarEdenTas.Add("Kale", rookSayac);
+            tekrarEdenTas.Add("Vezir", queenSayac);
+            tekrarEdenTas.Add("Şah", kingSayac);
 
-            //foreach (var item in tekrarEdenTas) 
-            //{
-            //    Console.WriteLine($"en çok tekrar eden taş :{item.Key} {item.Value} defa");
-            //}
+            string enCokTekrarEdenTas = "";
+            int maxValue = 0;
 
-            //SortedList<int, int> tekraredentass = new SortedList<int, int>();
+            foreach (var item in tekrarEdenTas)
+            {
+                if (item.Value > maxValue)
+                {
+                    maxValue = item.Value;
+                    enCokTekrarEdenTas = item.Key;
+                }
+            }
 
-            //tekraredentass.Add(rookSayac, 0);
-            //tekraredentass.Add(knightSayac, 0);
-            //tekraredentass.Add(pawnSayac, 0);
-            //tekraredentass.Add(bishopSayac, 0);
-            //tekraredentass.Add(queenSayac, 0);
-            //tekraredentass.Add(kingSayac, 0);
-
-            //int sonTas = tekraredentass.Count - 1;
-            //int sonTasİsmi = tekraredentass.Keys[sonTas];
-            //int sonTasDegeri = tekraredentass.Values[sonTas];
-
-            //Console.WriteLine($"En çok tekrar eden taş : {sonTasİsmi} defa {sonTasDegeri}");
-
-            int[] tekrarEdenTas = new int[6];
-
-            tekrarEdenTas[0] = rookSayac;
-            tekrarEdenTas[1] = knightSayac;
-            tekrarEdenTas[2] = queenSayac;
-            tekrarEdenTas[3] = kingSayac;
-            tekrarEdenTas[4] = pawnSayac;
-            tekrarEdenTas[5] = bishopSayac;
-
-            Array.Sort(tekrarEdenTas);
-            Console.WriteLine($"En çok tekrar eden taş : {tekrarEdenTas[5]}");
+            Console.WriteLine($"En çok tekrar eden taş: {enCokTekrarEdenTas} {maxValue} defa");
 
 
 
