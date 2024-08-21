@@ -18,5 +18,7 @@ namespace UygulamaCalismalari_7
         {
             Console.WriteLine("Araba durdu");
         }
+
+
     }
 }
